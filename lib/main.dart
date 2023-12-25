@@ -53,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
           onPageChanged: (index){
             precacheImage( AssetImage('images/mypic (${(index + 1)%33 + 1}).jpg'), context,onError: (Object exception, StackTrace? stackTrace)=>print('exception:$exception'));
             precacheImage( AssetImage('images/mypic (${(index + 2)%33 + 1}).jpg'), context,onError: (Object exception, StackTrace? stackTrace)=>print('exception:$exception'));
+            precacheImage( AssetImage('images/mypic (${(index + 3)%33 + 1}).jpg'), context,onError: (Object exception, StackTrace? stackTrace)=>print('exception:$exception'));
+            precacheImage( AssetImage('images/mypic (${(index + 4)%33 + 1}).jpg'), context,onError: (Object exception, StackTrace? stackTrace)=>print('exception:$exception'));
           },
           itemBuilder: (ctx,index)=>Image.asset('images/mypic (${index + 1}).jpg')
       ),
